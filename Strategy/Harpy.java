@@ -1,9 +1,10 @@
 package Strategy;
 
-public class Harpy implements Strategy {
+public class Harpy extends Organizm implements Strategy {
     int flyAtack;
 
-    public Harpy(int flyAtack) {
+    public Harpy(int flyAtack,int health,String status) {
+        super (health,status);
         this.flyAtack = flyAtack;
     }
 

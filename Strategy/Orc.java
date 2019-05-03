@@ -1,11 +1,12 @@
 package Strategy;
 
-public class Orc implements Strategy {
+public class Orc extends Organizm implements Strategy {
 
 
     int atack;
 
-    public Orc(int atack) {
+    public Orc(int atack,int health, String status) {
+        super (health,status);
         this.atack = atack;
     }
 

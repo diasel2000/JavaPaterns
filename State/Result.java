@@ -22,6 +22,6 @@ public class Result {
         context.setGrant ( create );
         for (int i =0;i<5;i++){
         context.status ();
-        context.Operation ();}
+        context.operation ();}
     }
 }

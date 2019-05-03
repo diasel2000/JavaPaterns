@@ -22,7 +22,7 @@ public class Context {
         grant = gr;
     }
 
-    void Operation() {
+    void operation() {
         if (grant instanceof GrantCreate) {
             setGrant ( new GrantConsider ( consider ) );
         } else if (grant instanceof GrantConsider) {

@@ -1,9 +1,10 @@
 package Strategy;
 
-public class Vampire implements Strategy {
+public class Vampire extends Organizm implements Strategy {
     boolean bloodDrinker;
 
-    public Vampire(boolean bloodDrinker) {
+    public Vampire(boolean bloodDrinker,int health, String status) {
+        super (health,status);
         this.bloodDrinker = bloodDrinker;
     }
 

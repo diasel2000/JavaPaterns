@@ -12,6 +12,7 @@ public class Play {
         Scanner in = new Scanner ( System.in );
 
         while ((cmd = in.nextInt ()) != 0) {
+
             if (cmd == 17) {
                 play.undo ();
                 System.out.print ( "Enter position: " );

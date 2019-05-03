@@ -1,9 +1,10 @@
 package Strategy;
 
-public class Elf implements Strategy {
+public class Elf extends Organizm implements Strategy {
     int atack;
 
-    public Elf(int atack) {
+    public Elf(int atack,int health, String status) {
+        super (health,status);
         this.atack = atack;
     }
 

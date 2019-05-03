@@ -8,7 +8,7 @@ public class AbstractFactory {
         menu ();
     }
 
-    public static void menu(){
+    public static void menu() {
         Scanner sc = new Scanner ( System.in );
         String parametr = sc.nextLine ();
         Factory factory = new AbstractFactory ().createFactory ( parametr );
@@ -23,14 +23,14 @@ public class AbstractFactory {
                 Type type = factory.createType ( num );
                 System.out.println ( type.type () );
             case "Movi":
-                parametr = "Movi";
+               // parametr = "Movi";
                 Factory factory2 = new AbstractFactory ().createFactory ( parametr );
                 System.out.println ( "Enter movi name:" );
                 String name = sc.nextLine ();
                 Movi movi = factory2.createMovi ( name );
                 movi.getName ();
             case "Language":
-                parametr = "Language";
+               // parametr = "Language";
                 Factory factory3 = new AbstractFactory ().createFactory ( parametr );
                 System.out.println ( "Enter movi language:" );
                 String language = sc.nextLine ();
@@ -38,7 +38,8 @@ public class AbstractFactory {
                 languages.getLanguage ();
         }
     }
-    Factory createFactory(String typeOfFactory) {
+
+   static Factory createFactory(String typeOfFactory) {
 
         switch (typeOfFactory) {
             case "Type":
